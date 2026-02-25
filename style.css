@@ -122,7 +122,7 @@ header {
     color: #FFFFFF;
 }
 
-#btn-our-work {
+.btn-our-work {
     width: 197px;
     height: 71px;
 
@@ -133,7 +133,7 @@ header {
 
 }
 
-#btn-our-work span {
+.btn-our-work span {
     font-family: 'Merriweather';
     font-weight: 700;
     font-style: bolt;
@@ -204,20 +204,19 @@ main {
 .text-first-conteiner {
     font-family: Merriweather;
     font-weight: 400;
-    font-style: normal;
+    font-style: Regular;
     font-size: 18px;
-    line-height: 23px;
+    line-height: 32px;
     letter-spacing: 0%;
 
     text-align: left;
-
 }
 
 #title-container {
     width: 428px;
 }
 
-#title-fist-section {
+.title-heading {
     font-size: 54px;
     font-weight: 700;
     font-style: bold;
@@ -282,4 +281,32 @@ main {
     height: 410px;
     gap: 40px;
     
+}
+
+#three-section {
+    position: relative;
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#heading-we-craft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.highlight-line {
+    background-image: linear-gradient(to top, rgba(255, 86, 120, 1) 40%, transparent 40%)
+}
+
+.title-heading-craft {
+    font-family: Merriweather;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 54px;
+    line-height: 72px;
+    letter-spacing: 0%;
 }
