@@ -20,7 +20,11 @@ header,
 .craft-section,
 .things-list,
 .item-team,
-.name-memere-team {
+.name-memere-team,
+#testimonial-section,
+#testimonial-heading,
+#feedback-block
+{
     display: flex;
     justify-content: space-between;
 }
@@ -29,6 +33,13 @@ header,
     font-weight: 700;
     font-size: 54px;
     line-height: 72px;
+    letter-spacing: 0%;
+}
+
+.text-normal {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
     letter-spacing: 0%;
 }
 
@@ -276,6 +287,12 @@ main {
 
     border: 1px solid rgba(184, 184, 184, 1);
     border-radius: 50px;
+
+    text-align: center;
+}
+
+.item-team>span {
+    text-align: center;
 }
 
 .item-team:hover {
@@ -288,22 +305,7 @@ main {
     gap: 24px;
 }
 
-.name-persone {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 36px;
-    letter-spacing: 0%;
-    width: auto;
-
-    text-align: center;
-}
-
 .profetion-persone {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
-    letter-spacing: 0%;
-
     text-align: center;
 }
 
@@ -357,10 +359,10 @@ main {
 
 #photos-work-body {
     grid-template-columns: 518px 518px;
-    grid-template-areas: 
-    "left right-first"
-    "left right-second"
-    "foot foot";
+    grid-template-areas:
+        "left right-first"
+        "left right-second"
+        "foot foot";
 }
 
 .image-work {
@@ -383,4 +385,67 @@ main {
 #image-work-body-4 {
     width: 1068px;
     grid-area: foot;
+}
+
+#testimonial-section {
+    padding: var(--standard-padding);
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+#testimonial-heading {
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#feedback-block {
+    width: 2236px;
+    height: 672px;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.feedback-block-item {
+    width: 412px;
+    height: 555px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border: 1px solid rgba(148, 148, 148, 1);
+    border-radius: 150px;
+}
+
+.body-item-feedback {
+    width: 253px;
+    height: 340px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 46px;
+}
+
+.comment-feedback-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.client-feedback {
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
