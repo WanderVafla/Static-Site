@@ -1,17 +1,53 @@
+* {
+    font-family: 'Merriweather';
+}
+
+:root {
+    --primary-color: #FF5678;
+    --black-color: #000000;
+    --white-color: #ffffff;
+
+    --standard-padding: 100px 150px;
+}
+
+nav,
+header,
+#watch-videos-container,
+#first-section,
+#text-conteiner-first-section,
+#second-section,
+.block-number-text div,
+.craft-section,
+.things-list,
+.item-team,
+.name-memere-team {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-heading {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 72px;
+    letter-spacing: 0%;
+}
+
+mark {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
 body {
     padding: 0;
     margin: 0;
 }
 
 nav {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     padding: 8px 150px;
 
-    background: #FFFFFF;
-
+    background: var(--white-color);
     box-shadow: 0px 8px 20px 5px rgba(0, 0, 0, 0.08);
 }
 
@@ -19,72 +55,44 @@ nav {
     display: inline-block;
 }
 
-#text_logo {
-    display: inline-block;
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    align-items: center;
-
-    color: #FF5678;
-}
-
-.container-logo-nav {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
 #nav-list {
-    list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
-.nav-list-items {
+li {
     display: inline-block;
     padding: 8px;
 
-    font-family: 'Merriweather';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    color: black;
+    color: var(--var(--black-color)-color);
 }
 
 .nav-list-items:hover {
-    text-decoration: underline #FF5678;
+    text-decoration: underline var(--primary-color);
     text-decoration-thickness: 3px;
     text-underline-offset: 8px;
 }
 
 .contact-us {
-    background-color: black;
+    background-color: var(--black-color);
     padding: 24px 40px;
 }
 
 .contact-us:hover {
-    background-color: #FF5678;
+    background-color: var(--primary-color);
 }
 
 .contact-us span {
-    font-family: 'Merriweather';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 header {
     padding: 300px 150px 200px;
-
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-start;
     gap: 56px;
 }
@@ -102,11 +110,9 @@ header {
 }
 
 .headding span {
-    font-family: 'Merriweather';
-    font-style: black;
     font-weight: 900;
     font-size: 76px;
-    color: black;
+    color: var(--black-color);
     line-height: 110px;
 
 }
@@ -118,30 +124,24 @@ header {
 .headding span mark {
     width: 275px;
     height: 70px;
-    background-color: #FF5678;
-    color: #FFFFFF;
+
 }
 
 .btn-our-work {
-    width: 197px;
-    height: 71px;
-
     padding: 24px 40px;
-
+    gap: 4px;
     background-color: #020E35;
     box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
 
 }
 
 .btn-our-work span {
-    font-family: 'Merriweather';
     font-weight: 700;
-    font-style: bolt;
     font-size: 18px;
     line-height: 23px;
     letter-spacing: 0%;
 
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 main {
@@ -150,108 +150,60 @@ main {
 
 #first-section {
     padding: 100px 150px;
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 #text-conteiner-first-section {
-    display: flex;
-    justify-content: space-between;
     width: 517px;
     height: 435px;
     flex-direction: column;
-}
-
-#text-conteiner-first-section button {
-    width: 197px;
-    height: 71px;
-
-    padding: 24px 40px;
-    gap: 4px;
-
-    background-color: #020E35;
-    box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
+    gap: 60px;
 }
 
 #watch-videos-container {
     width: 212px;
-    display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 #watch-videos-container span {
-    font-family: Merriweather;
     font-weight: 700;
-    font-style: Bold;
     font-size: 18px;
     line-height: 23px;
     letter-spacing: 0%;
 }
 
-#text-conteiner-first-section button span {
-    font-family: 'Merriweather';
-    font-weight: 700;
-    font-style: bolt;
+.text-first-conteiner {
+    font-weight: 400;
     font-size: 18px;
     line-height: 23px;
-
-    color: #FFFFFF;
-}
-
-.text-first-conteiner {
-    font-family: Merriweather;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 18px;
-    line-height: 32px;
     letter-spacing: 0%;
 
     text-align: left;
 }
 
-#title-container {
-    width: 428px;
-}
-
-.title-heading {
-    font-size: 54px;
-    font-weight: 700;
-    font-style: bold;
-    line-height: 62px;
-}
 
 #second-section {
     position: relative;
     padding: 100px 150px;
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 }
 
 .numbers-seconds-slade {
-    /* 04 */
-
     width: 83px;
     height: 72px;
 
-    font-family: 'Merriweather';
-    font-style: normal;
     font-weight: 400;
     font-size: 64px;
     line-height: 72px;
 
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    -webkit-text-stroke: 1px var(--black-color);
     -webkit-text-fill-color: transparent;
 }
 
 .sub-title {
-    font-family: Merriweather;
     font-weight: 700;
-    font-style: Bold;
     font-size: 28px;
     line-height: 36px;
     letter-spacing: 0%;
@@ -267,28 +219,22 @@ main {
 }
 
 .block-number-text div {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
     margin-top: 8px;
     overflow: hidden;
 }
 
 .things-list {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 410px;
     gap: 40px;
-    
+
 }
 
 .craft-section {
     position: relative;
     padding: 100px 150px;
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -299,16 +245,7 @@ main {
 }
 
 .highlight-line {
-    background-image: linear-gradient(to top, rgba(255, 86, 120, 1) 40%, transparent 40%)
-}
-
-.title-heading-craft {
-    font-family: Merriweather;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 54px;
-    line-height: 72px;
-    letter-spacing: 0%;
+    background-image: linear-gradient(to top, var(--primary-color) 40%, transparent 40%)
 }
 
 .team-section {
@@ -329,33 +266,30 @@ main {
     grid-row-gap: 51px;
     grid-column-gap: 32px;
 }
+
 .item-team {
     padding: 71px 164px;
 
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 60px;
     align-items: center;
 
     border: 1px solid rgba(184, 184, 184, 1);
     border-radius: 50px;
 }
+
 .item-team:hover {
     scale: 1.05;
     box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
 }
+
 .name-memere-team {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 24px;
 }
 
 .name-persone {
-    font-family: 'Merriweather';
     font-weight: 700;
-    font-style: bold;
     font-size: 28px;
     line-height: 36px;
     letter-spacing: 0%;
@@ -365,12 +299,88 @@ main {
 }
 
 .profetion-persone {
-    font-family: Merriweather;
     font-weight: 400;
-    font-style: Regular;
     font-size: 18px;
     line-height: 23px;
     letter-spacing: 0%;
 
     text-align: center;
+}
+
+#previous-work {
+    padding: var(--standard-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+#slide-menu {
+    gap: 60px;
+}
+
+.slide-menu-item {
+    padding: 0 60px 0 0;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0%;
+}
+
+.slide-menu-text {
+    padding: 4px;
+}
+
+.slide-menu-text:hover {
+    text-decoration: underline var(--primary-color);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+}
+
+#photos-work-main {
+    width: 1620px;
+    height: 1376px;
+    grid-template-columns: 519px 1376px;
+}
+
+.photos-work {
+    display: grid;
+    grid-gap: 32px;
+}
+
+#photos-work-side {
+    grid-column: 1 / 1;
+    grid-template-rows: 672px;
+}
+
+#photos-work-body {
+    grid-template-columns: 518px 518px;
+    grid-template-areas: 
+    "left right-first"
+    "left right-second"
+    "foot foot";
+}
+
+.image-work {
+    grid-column: 518px 518px;
+    background-color: rgba(255, 238, 246, 1);
+}
+
+#image-work-body-1 {
+    grid-area: left;
+}
+
+#image-work-body-2 {
+    grid-area: right-first;
+}
+
+#image-work-body-3 {
+    grid-area: right-second;
+}
+
+#image-work-body-4 {
+    width: 1068px;
+    grid-area: foot;
 }
