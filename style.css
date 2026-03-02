@@ -25,7 +25,8 @@ header,
 #testimonial-section,
 #testimonial-heading,
 #feedback-block,
-#contact-section
+#contact-section,
+#join-newslettre-section
 {
     display: flex;
     justify-content: space-between;
@@ -495,4 +496,9 @@ main {
 #message-area {
     height: 200px;
     resize: none;
+}
+
+#join-newslettre-section {
+    padding: var(--standard-padding);
+    align-items: center;
 }
