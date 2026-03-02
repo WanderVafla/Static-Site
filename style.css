@@ -1,5 +1,6 @@
 * {
     font-family: 'Merriweather';
+
 }
 
 :root {
@@ -23,7 +24,8 @@ header,
 .name-memere-team,
 #testimonial-section,
 #testimonial-heading,
-#feedback-block
+#feedback-block,
+#contact-section
 {
     display: flex;
     justify-content: space-between;
@@ -51,6 +53,7 @@ mark {
 body {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 nav {
@@ -388,10 +391,12 @@ main {
 }
 
 #testimonial-section {
-    padding: var(--standard-padding);
+    width: 1920px;
+    height: 1280px;
     flex-direction: column;
     align-items: center;
     gap: 100px;
+    overflow: hidden;
 }
 
 #testimonial-heading {
@@ -403,7 +408,7 @@ main {
 }
 
 #feedback-block {
-    width: 2236px;
+    position: static;
     height: 672px;
     flex-direction: row;
     align-items: center;
@@ -413,7 +418,6 @@ main {
 .feedback-block-item {
     width: 412px;
     height: 555px;
-
 
     display: flex;
     flex-direction: column;
@@ -444,8 +448,51 @@ main {
 }
 
 .client-feedback {
-
     display: flex;
     flex-direction: column;
     gap: 6px;
+}
+
+#contact-section {
+    padding: var(--standard-padding);
+    align-items: center;
+}
+
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+}
+
+.line-input {
+    width: 656px;
+    height: 70px;
+    padding: 4px;
+    gap: 4px;
+    background-color: rgba(255, 238, 246, 1);
+    border: 1px solid rgba(2, 14, 53, 1);
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    font-size: 18px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+
+}
+
+.input-title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#message-area {
+    height: 200px;
+    resize: none;
 }
