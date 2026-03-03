@@ -15,6 +15,6 @@ This project is a pixel-perfect implementation of a desktop mockup (1920px) crea
 
 ## How to Run
 
-1. Clone the repository via SSH:
+1. Clone the repository via HTTPS:
    ```bash
    git clone https://github.com/WanderVafla/Static-Site.git
