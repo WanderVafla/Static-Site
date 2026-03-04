@@ -107,6 +107,11 @@ main {
     font-weight: var(--font-weight-normal);
     font-size: 16px;
 }
+.sub-title-footer {
+    font-size: 14px;
+    font-weight: var(--font-weight-normal);
+    line-height: 18px;
+}
 /* BUTTON */
 .btn-our-work {
     padding: 24px 40px;
@@ -323,7 +328,6 @@ text-align: center;
 }
 /* FOOTER SECTION */
 footer {
-    position: relative;
     padding-top: 100px;
     background-image: url('images/icons/back_deco_footer.svg');
 }
@@ -339,12 +343,8 @@ footer {
 .title-block-contact {
     font-weight: var(--font-weight-bold);
     font-size: 20px;
+    line-height: 24px;
     letter-spacing: 0%;
-}
-.sub-title-footer {
-    font-size: 14px;
-    font-weight: var(--font-weight-normal);
-    line-height: 18px;
 }
 #address-contact-footer {
     font-weight: var(--font-weight-bold);
